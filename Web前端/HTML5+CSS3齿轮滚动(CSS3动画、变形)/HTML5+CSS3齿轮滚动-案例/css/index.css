@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+.section{
+    height: 100%;
+    /*设置背景图*/
+    background:url(../images/bg_03.jpg) no-repeat center;
+}
+/*对包含所有图片的div相对定位*/
+.right{
+    width: 800px;
+    height: 900px;
+    position: relative;
+    left: 50%;
+    margin-left: -400px;
+}
+/*对所有图像进行绝对定位*/
+.right div{
+    position:absolute;
+}
+/*设置水滴的位置和动画效果*/
+.img-1{
+    width: 30px;
+    height: 30px;
+    background:url(../images/icon-1.png) no-repeat center;
+    left:413px;
+    bottom:561px;
+    animation: rotate2 2s ease-in-out infinite;
+
+}
+/*设置齿轮和人的div的背景图和位置-开始*/
+.img-2{
+    width: 70px;
+    height: 70px;
+    background:url(../images/icon-2.png) no-repeat center;
+    left:30px;
+    bottom:647px;
+}
+.img-3{
+    width: 110px;
+    height: 110px;
+    background:url(../images/icon-3.png) no-repeat center;
+    right:43px;
+    bottom:584px;
+}
+.img-4{
+    width: 135px;
+    height: 135px;
+    background:url(../images/icon-4.png) no-repeat center;
+    left:289px;
+    bottom:446px;
+}
+.img-5{
+    width: 105px;
+    height: 105px;
+    background:url(../images/icon-5.png) no-repeat center;
+    left:419px;
+    bottom:442px;
+}
+.img-6{
+    width: 180px;
+    height: 180px;
+    background:url(../images/icon-6.png) no-repeat center;
+    left:475px;
+    bottom:505px;
+}
+.img-7{
+    width: 240px;
+    height: 240px;
+    background:url(../images/icon-7.png) no-repeat center;
+    left:66px;
+    bottom:466px;
+}
+.img-8{
+    width: 800px;
+    height: 100%;
+    background:url(../images/img.png) no-repeat bottom right;
+    left:0px;
+    bottom:0px;
+}
+.img-9{
+    width: 30px;
+    height: 42px;
+    background:url(../images/icon-8.png) no-repeat bottom right;
+    left:285px;
+    bottom:460px;
+}
+.img-10{
+    width: 60px;
+    height: 60px;
+    background:url(../images/icon-9.png) no-repeat bottom right;
+    left:495px;
+    bottom:440px;
+}
+.img-11{
+    width: 70px;
+    height: 50px;
+    background:url(../images/icon-10.png) no-repeat bottom right;
+    right:111px;
+    bottom:501px;
+}
+/*设置齿轮和人的div的背景图和位置-结束*/
+
+/*设置齿轮的两个转动方向和动画播放方式-*/
+.img-2,.img-3,.img-4,.img-7{
+    animation: rotate1 15s ease-in-out infinite;
+}
+.img-6,.img-5{
+    animation: rotate 15s ease-in-out infinite;
+}
+/*设置齿轮逆时针绕Z轴旋转*/
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+/*设置齿轮顺时针绕Z轴旋转*/
+@keyframes rotate1 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+/*设置水滴滴下的动画效果*/
+@keyframes rotate2 {
+    0% {
+
+        opacity: 0;/*变为透明*/
+    }
+
+    100% {
+        bottom: 300px;/*向下移动300px*/
+    }
+}
+
+

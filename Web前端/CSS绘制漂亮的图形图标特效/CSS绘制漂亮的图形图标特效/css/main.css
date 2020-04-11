@@ -1,0 +1,241 @@
+/*清除所有元素的内外边距*/
+* {
+    margin: 0;
+}
+/*设置每个图标外层div的最小高度和相对定位*/
+.entry {
+    min-height: 400px;
+    position: relative;
+}
+/*每个图标相对于外层div定位到中间位置*/
+.entry div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+/*使用伪选择器在图标前后添加内容并显示和定位*/
+.entry div:before,
+.entry div:after
+{
+    display: block;
+    content: '';
+    position: absolute;
+}
+/*在div高度小于等于400px时缩放div*/
+@media (max-width: 400px) {
+    .entry div {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+/*在div高度大于等于400px时样式*/
+@media all and (min-width: 960px) {
+    .entry {
+        float: left; /*外层div浮动*/
+        width: 50%;
+    }
+    /*最上面的div宽度100%*/
+    .wide {
+        width: 100%;
+    }
+}
+/*设置蛋糕的背景色*/
+#cupcake {
+    background: #ffc0cb;
+}
+/*设置纸托蛋糕的底部样式*/
+#cupcake div {
+    width: 240px;
+    height: 150px;
+    margin-left: -120px;
+    margin-top: -30px;
+    background: #61381c;
+    background-image:
+     /*使用径向渐变在背景上生成渐变区域*/
+    radial-gradient(circle at top center,
+    rgba(73,41,20,0) 55%,
+    rgba(73,41,20,0.9) 75%),
+        /*底部纹理*/
+    repeating-linear-gradient(to right, transparent,
+    transparent 7px, rgba(0,0,0,0.7) 9px,
+    rgba(0,0,0,0.7) 20px, transparent 22px),
+       /*使用线性渐变生成灰色横条*/
+    linear-gradient(to bottom, transparent 15px,
+    rgba(255,255,255,0.5) 16px, rgba(255,255,255,0.3) 40px,
+    transparent 42px);
+    /*使用圆角边框让左下角和右下角产生弧度*/
+    border-bottom-right-radius: 120px 30px;
+    border-bottom-left-radius: 120px 30px;
+    box-shadow: 0 10px 5px -3px rgba(0,0,0,0.3);
+}
+/*蛋糕的顶部奶油部分*/
+#cupcake div:before {
+    width: 240px;
+    height: 80px;
+    margin-left: -120px;
+    left: 50%;
+    top: -70px;
+    background: #ffe4e1;
+    /*使用圆角边框添加弧度*/
+    border-radius: 60% 60% 50px 50px;
+    /*棕色部分使用阴影来实现*/
+    box-shadow: 0 20px 0 6px #3d241c, inset 0 -15px 25px rgba(145,102,146,0.5);
+}
+/*蛋糕上的水果*/
+#cupcake div:after {
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    top: -95px;
+    left: 50%;
+    background: #dc143c;
+    /*设置圆形和阴影*/
+    border-radius: 50%;
+    box-shadow: inset 0 -10px 10px rgba(0,0,0,0.2);
+}
+/*早餐部分的背景色*/
+#breakfast {
+    background: #34b1cc;
+}
+/*早餐盘子的样式*/
+#breakfast div {
+    width: 210px;
+    height: 210px;
+    margin-left: -105px;
+    margin-top: -110px;
+    /*使用圆角边框设置圆形盘子*/
+    border-radius: 50%;
+    background: #f7f7f7;
+    /*使用阴影添加盘子的外围*/
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.1),
+    0 0 0 20px white,
+    0 6px 0 20px #eee,
+    0 12px 4px 20px rgba(0,0,0,0.2);
+}
+/*早餐中所有圆形部分*/
+#breakfast div:before {
+    width: 140px;
+    height: 140px;
+    left: 70px;
+    top: 0px;
+    border-radius: 50%;
+    background: #d6ab75;
+    box-shadow:
+    /*最大面包底部*/
+    0 6px 0 #f1cb9a, 0 8px 2px rgba(0,0,0,0.2) ,
+    /*第一个鸡蛋*/
+    -132px 40px 0 -61px #f6c83e,
+    -128px 40px 0 -54px #edb815,
+    -128px 42px 2px -54px rgba(0,0,0,0.2),
+    -115px 30px 0 -30px white,
+    /*第二个鸡蛋*/
+    -62px 90px 0 -61px #f6c83e,
+    -65px 90px 0 -54px #edb815,
+    -65px 92px 2px -54px rgba(0,0,0,0.2),
+    -80px 90px 0 -32px white,
+    /*第一个绿色点心*/
+    -115px 33px 2px -30px rgba(0,0,0,0.1),
+    -80px 93px 2px -32px rgba(0,0,0,0.1),
+    -8px 110px 0 -45px #8c7842,
+      /*第二哥绿色点心*/
+    -8px 113px 2px -45px rgba(0,0,0,0.2),
+    25px 103px 0 -45px #806c35,
+    25px 106px 2px -45px rgba(0,0,0,0.2),
+     /*粉色水果*/
+    -93px -40px 0 -45px #e4a5b6,
+    -93px -39px 0 -42px #c97d91,
+    -93px -37px 2px -42px rgba(0,0,0,0.2);
+}
+/*面包上的方型点缀*/
+#breakfast div:after {
+    width: 30px;
+    height: 30px;
+    left: 120px;
+    top: 50px;
+    border-radius: 2px;
+    background: #fbf6bc;
+    box-shadow: 1px 1px 0 2px #dfd888, 2px 2px 3px 2px rgba(0,0,0,0.2);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+/*血玛丽酒背景色*/
+#bloody-mary {
+    background: #b0e0e6;
+}
+/*就北地不样式*/
+#bloody-mary div {
+    width: 180px;
+    height: 100px;
+    margin-left: -90px;
+    margin-top: 10px;
+    z-index: 2;
+    /*使用渐变背景*/
+    background: linear-gradient(to right,
+    #eee 0%, #db493e 3%,
+    #b8423a 5%, #53646e 7%,
+    #b8423a 9%, #53646e 11%,
+    #53646e 14%, #bfc9ca 33%,
+    #eee 41%, #eee 75%,
+    #95a4a3 85%, #556168 90%,
+    #7c8285 98%, white 100%);
+    /*左右圆角边框*/
+    border-bottom-left-radius: 80px 10px;
+    border-bottom-right-radius: 80px 10px;
+    border-bottom: 2px solid #ddd;
+    /*杯底阴影*/
+    box-shadow: 0 3px 4px -3px rgba(0,0,0,0.4), 0 8px 7px -3px rgba(0,0,0,0.2);
+}
+#bloody-mary div:before {
+    width: 40px;
+    height: 95px;
+    margin-left: 40px;
+    top: -140px;
+    left: 50%;
+    z-index: 1;
+    background: #d7e17f;
+    /*使用渐变制作习惯*/
+    background: linear-gradient(to right, #cdeca8 10%,
+    #a2d269 18%, #a2d269 25%,
+    #bde192 45%, #bde192 55%,
+    #95c260 75%, #95c260 82%,
+    #bde192 90%);
+    border-top-left-radius: 20px 3px;
+    border-top-right-radius: 20px 3px;
+    border-top: 5px solid #95c260;
+    /*使用阴影生成冰块*/
+    box-shadow: -65px 111px 0 14px #eee;
+    /*旋转习惯和冰块的角度*/
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+/*酒*/
+#bloody-mary div:after {
+    width: 177px;
+    height: 170px;
+    margin-left: -90px;
+    top: -105px;
+    left: 50%;
+    z-index: 3;
+    background:
+    /*使用线性渐变添加杯子上部透明部分*/
+    linear-gradient(to right, rgba(0,0,0,0.1) 0%,
+    rgba(255,255,255,0) 15%,
+    rgba(255,255,255,0) 45%,
+    rgba(255,255,255,0.3) 55%,
+    rgba(255,255,255,0.3) 65%,
+    rgba(255,255,255,0) 80%,
+    rgba(0,0,0,0.2) 100%),
+    /*使用线性渐变添加酒*/
+    linear-gradient(to bottom, transparent 30%, #e04435 30%, #ab2e22 100%);
+    /*在杯体的上下添加白色线条*/
+    border: 1px solid #ddd;
+    border-right-width: 2px;
+    border-bottom-width: 5px;
+    border-top-width: 2px;
+    border-top-color: #eee;
+    /*使用圆角边框为白色线条添加弧度*/
+    border-bottom-left-radius: 150px 15px;
+    border-bottom-right-radius: 150px 15px;
+    border-top-left-radius: 120px 15px;
+    border-top-right-radius: 120px 15px;
+}

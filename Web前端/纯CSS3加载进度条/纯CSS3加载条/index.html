@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>纯css3实现的条纹加载条 </title>
+    <style>
+      /*设置整个背景高度为100%*/
+      body, html {
+        height: 100%;
+      }
+      body {
+        background-repeat: no-repeat;
+        background-position: center;
+        /*设置背景为径向渐变色*/
+        background-image: radial-gradient(circle, #ffb5e7, #ff6e9b);
+      }
+      /*设置加载条父元素的宽度和外边距*/
+      .container {
+        width: 75%;
+        margin: 23% auto 0;
+      }
+      /*设置加载条的高度*/
+      .container .warning {
+        height: 6em;
+      }
+      h1{
+        text-align: center;
+      }
+      .warning {
+  position: relative;
+  background-color: #ff6e9b;/*设置加载条背景色*/
+  border: 1px solid #ff6e9b;
+  border-radius: 10px; /*设置加载条圆角*/
+  box-shadow: 1em 3em 10em rgba(255, 110, 155, 0.8);/*设置加载条阴影*/
+  background-size: 3em 3em;
+        /*使用线性渐变设置滚动的条纹*/
+  background-image: linear-gradient(-45deg, transparent 0em,
+  transparent 0.8em, #ffb5e7 0.9em, #ffb5e7 2.1em,
+  transparent 2.1em, transparent 2.9em, #ffb5e7 3.1em);
+        /*应用动画*/
+  -webkit-animation: warning-animation 750ms infinite linear;
+  -moz-animation: warning-animation 750ms infinite linear;
+  animation: warning-animation 750ms infinite linear;
+}
+/*定义动画*/
+@-webkit-keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3em 0;
+  }
+}
+@-moz-keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3em 0;
+  }
+}
+@keyframes warning-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 3em 0;
+  }
+}
+/*设置加载条的渐变背景*/
+.warning:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #ff6e9b, rgba(255, 110, 155, 0.6) 15%,
+  transparent 60%, #ff6e9b);
+}
+</style>
+</head>
+<body>
+    <div class="container">
+       <H1>loading</H1>
+        <div class="warning"></div>
+    </div>
+</body>
+</html>

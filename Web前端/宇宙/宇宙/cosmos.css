@@ -1,0 +1,182 @@
+        body {
+            margin: 0;  /*清除外边距*/
+            padding: 0; /*清除内边距*/
+            background: #080e24 url(./bg.jpg) repeat; /*设置背景*/
+        }
+
+        ul {
+            width: 600px;
+            height: 600px;
+            margin: 80px auto; /*外边距上下80，左右居中*/
+            position: relative;/*相对定位*/
+            list-style: none;  /*清除列表样式*/
+        }
+
+        ul li {
+            border: 2px solid #394057;/*设置轨道粗细和颜色*/
+            position: absolute;/*表示绝对定位，位置将依据浏览器左上角开始计算。*/
+            left: 50%;/*左右居中 */
+            top: 50%; /*上下居中 */
+            border-radius: 50%; /*用圆角属性画正圆 */
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+
+            animation-iteration-count: infinite;/*动画循环次数：无限循环*/
+            animation-timing-function: linear;/*动画从头到尾的速度是相同的。*/
+            animation-name: orbit;/*为 @keyframes 动画规定一个名称*/
+        }
+
+        ul li span {/*轨道上的球体*/
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        ul li:nth-child(1) {/*正中央的球体*/
+            width: 60px;
+            height: 60px;
+            border: none;
+            box-shadow: 0 0 50px #c90; /*给中央的球体加阴影*/
+            background-color: #C90;
+            animation-duration: 5s;/*动画5S完成一个周期*/
+        }
+
+        ul li:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            animation-duration: 6s;
+        }
+
+        ul li:nth-child(2) span {
+            background-color: yellow;
+            left: 80px;
+            top: 0;
+        }
+
+        ul li:nth-child(3) {
+            width: 180px;
+            height: 180px;
+            animation-duration: 10s;
+        }
+
+        ul li:nth-child(3) span {
+            background-color: blue;
+            left: 47px;
+            top: 0;
+        }
+
+        ul li:nth-child(4) {
+            width: 240px;
+            height: 240px;
+            animation-duration: 12s;
+        }
+
+        ul li:nth-child(4) > span {
+            background-color: green;
+            left: 209px;
+            top: 43px;
+            animation: orbit 2s infinite linear;
+        }
+
+        ul li:nth-child(4) > span span {
+            width: 6px;
+            height: 6px;
+            left: 16px;
+            background-color: yellow;
+        }
+
+        ul li:nth-child(5) {
+            width: 300px;
+            height: 300px;
+            background-image: url(./asteroids_meteorids.png);
+            background-size: cover;/*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。*/
+            animation-duration: 25s;
+        }
+
+        ul li:nth-child(5) span {
+            background-color: red;
+            left: 95px;
+            top: 0;
+        }
+
+        ul li:nth-child(6) {
+            width: 360px;
+            height: 360px;
+            animation-duration: 20s;
+        }
+
+        ul li:nth-child(6) span {
+            background-color: #CCC;
+            left: -5px;
+            top: 200px;
+        }
+
+        ul li:nth-child(7) {
+            width: 420px;
+            height: 420px;
+            animation-duration: 30s;
+        }
+
+        ul li:nth-child(7) > span {
+            background-color: green;
+            left: 300px;
+            top: 18px;
+        }
+
+        ul li:nth-child(7) > span span {
+            width: 15px;
+            height: 15px;
+            border: 2px solid #CCC;
+            left: -4px;
+            top: -4px;
+            transform: skew(0, 45deg);/*使变形，椭圆*/
+        }
+
+        ul li:nth-child(8) {
+            width: 480px;
+            height: 480px;
+            animation-duration: 35s;
+        }
+
+        ul li:nth-child(8) span {
+            background-color: pink;
+            left: 0;
+            top: 170px;
+        }
+
+        ul li:nth-child(9) {
+            width: 540px;
+            height: 540px;
+            animation-duration: 40s;
+        }
+
+        ul li:nth-child(9) span {
+            background-color: blue;
+            left: 47px;
+            top: 100px;
+        }
+
+        ul li:nth-child(10) {
+            width: 600px;
+            height: 600px;
+            animation-duration: 45s;
+        }
+
+        ul li:nth-child(10) span {
+            background-color: yellow;
+            left: 224px;
+            top: 0;
+        }
+
+        @keyframes orbit {
+            0% {/*动画起始*/
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {/*动画结束*/
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
