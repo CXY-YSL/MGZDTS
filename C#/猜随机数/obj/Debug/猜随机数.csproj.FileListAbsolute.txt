@@ -1,0 +1,7 @@
+D:\360\C#\猜随机数\bin\Debug\猜随机数.exe.config
+D:\360\C#\猜随机数\bin\Debug\猜随机数.exe
+D:\360\C#\猜随机数\bin\Debug\猜随机数.pdb
+D:\360\C#\猜随机数\obj\Debug\猜随机数.csprojAssemblyReference.cache
+D:\360\C#\猜随机数\obj\Debug\猜随机数.csproj.CoreCompileInputs.cache
+D:\360\C#\猜随机数\obj\Debug\猜随机数.exe
+D:\360\C#\猜随机数\obj\Debug\猜随机数.pdb

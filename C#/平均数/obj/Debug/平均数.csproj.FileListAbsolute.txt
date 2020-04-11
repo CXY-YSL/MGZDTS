@@ -1,0 +1,7 @@
+D:\360\C#\平均数\bin\Debug\平均数.exe.config
+D:\360\C#\平均数\bin\Debug\平均数.exe
+D:\360\C#\平均数\bin\Debug\平均数.pdb
+D:\360\C#\平均数\obj\Debug\平均数.csprojAssemblyReference.cache
+D:\360\C#\平均数\obj\Debug\平均数.csproj.CoreCompileInputs.cache
+D:\360\C#\平均数\obj\Debug\平均数.exe
+D:\360\C#\平均数\obj\Debug\平均数.pdb

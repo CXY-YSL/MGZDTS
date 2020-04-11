@@ -1,0 +1,10 @@
+D:\360\C#\完数\bin\Debug\完数.exe.config
+D:\360\C#\完数\bin\Debug\完数.exe
+D:\360\C#\完数\bin\Debug\完数.pdb
+D:\360\C#\完数\obj\Debug\完数.csprojAssemblyReference.cache
+D:\360\C#\完数\obj\Debug\完数.Form1.resources
+D:\360\C#\完数\obj\Debug\完数.Properties.Resources.resources
+D:\360\C#\完数\obj\Debug\完数.csproj.GenerateResource.cache
+D:\360\C#\完数\obj\Debug\完数.csproj.CoreCompileInputs.cache
+D:\360\C#\完数\obj\Debug\完数.exe
+D:\360\C#\完数\obj\Debug\完数.pdb
