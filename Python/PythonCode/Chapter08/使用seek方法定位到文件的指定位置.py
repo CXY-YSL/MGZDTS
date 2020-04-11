@@ -1,0 +1,12 @@
+f=open("itheima.txt","r")
+str=f.read(15)
+print("读取的数据是:",str)
+#查找当前位置
+position=f.tell()
+print("当前文件的位置是：",position)
+#重新设置位置
+f.seek(4)
+#查找当前位置
+position=f.tell()
+print("当前文件的位置是：",position)
+f.close()
