@@ -1,0 +1,12 @@
+D:\360\C#\登录注册\obj\Debug\登录注册.csprojAssemblyReference.cache
+D:\360\C#\登录注册\obj\Debug\登录注册.登录.resources
+D:\360\C#\登录注册\obj\Debug\登录注册.Properties.Resources.resources
+D:\360\C#\登录注册\obj\Debug\登录注册.csproj.GenerateResource.cache
+D:\360\C#\登录注册\obj\Debug\登录注册.csproj.CoreCompileInputs.cache
+D:\360\C#\登录注册\obj\Debug\登录注册.exe
+D:\360\C#\登录注册\obj\Debug\登录注册.pdb
+D:\360\C#\登录注册\obj\Debug\登录注册.Form3.resources
+D:\360\C#\登录注册\obj\Debug\登录注册.注册.resources
+D:\360\C#\登录注册\bin\Debug\登录注册.exe.config
+D:\360\C#\登录注册\bin\Debug\登录注册.exe
+D:\360\C#\登录注册\bin\Debug\登录注册.pdb
