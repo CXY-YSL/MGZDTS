@@ -1,0 +1,11 @@
+D:\360\C#\算术批审\obj\Debug\算术批审.csprojAssemblyReference.cache
+D:\360\C#\算术批审\obj\Debug\算术批审.Properties.Resources.resources
+D:\360\C#\算术批审\obj\Debug\算术批审.csproj.GenerateResource.cache
+D:\360\C#\算术批审\obj\Debug\算术批审.csproj.CoreCompileInputs.cache
+D:\360\C#\算术批审\bin\Debug\算术批审.exe.config
+D:\360\C#\算术批审\bin\Debug\算术批审.exe
+D:\360\C#\算术批审\bin\Debug\算术批审.pdb
+D:\360\C#\算术批审\obj\Debug\算术批审.exe
+D:\360\C#\算术批审\obj\Debug\算术批审.pdb
+D:\360\C#\算术批审\obj\Debug\算术批审.Form1.resources
+D:\360\C#\算术批审\obj\Debug\算术批审.Form2.resources

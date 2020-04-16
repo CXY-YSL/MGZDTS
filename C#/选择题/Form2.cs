@@ -37,7 +37,7 @@ namespace 选择题
         {
             foreach(Control D in gb.Controls)
             {
-                if(((RadioButton)D).Checked == true && ((RadioButton)D).Text.Substring(0,1) == zhengque)
+                if(((CheckBox)D).Checked == true && ((CheckBox)D).Text.Substring(0,1) == zhengque)
                 {
                     Num++;
                 }
@@ -59,6 +59,16 @@ namespace 选择题
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
