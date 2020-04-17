@@ -9,7 +9,7 @@
 -------
 * [Android](https://github.com/CXY-YSL/MGZDTS/tree/Android)
   * Android开发相关工具[`AndroidDevTools`](https://www.androiddevtools.cn/)
-* [C＃.NET](https://github.com/CXY-YSL/MGZDTS/tree/C%23.NET"鼠标悬停")
+* [C＃.NET](https://github.com/CXY-YSL/MGZDTS/tree/C%23.NET "鼠标悬停")
 * [Python](https://github.com/CXY-YSL/MGZDTS/tree/Python)
 * [Java](https://www.oracle.com/java/)
 * [Jsp](https://github.com/CXY-YSL/MGZDTS/tree/Jsp)
