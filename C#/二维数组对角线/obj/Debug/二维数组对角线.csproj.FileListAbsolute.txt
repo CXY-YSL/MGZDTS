@@ -1,6 +1,0 @@
-D:\360\C#\二维数组对角线\bin\Debug\二维数组对角线.exe.config
-D:\360\C#\二维数组对角线\bin\Debug\二维数组对角线.exe
-D:\360\C#\二维数组对角线\bin\Debug\二维数组对角线.pdb
-D:\360\C#\二维数组对角线\obj\Debug\二维数组对角线.csproj.CoreCompileInputs.cache
-D:\360\C#\二维数组对角线\obj\Debug\二维数组对角线.exe
-D:\360\C#\二维数组对角线\obj\Debug\二维数组对角线.pdb

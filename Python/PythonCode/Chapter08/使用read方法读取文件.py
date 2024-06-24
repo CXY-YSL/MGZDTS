@@ -1,7 +1,0 @@
-f = open('itheima.txt', 'r')
-content = f.read(12)
-print(content)
-print("-"*30)
-content = f.read()
-print(content)
-f.close()

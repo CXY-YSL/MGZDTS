@@ -1,7 +1,0 @@
-D:\360\C#\选择排序法\bin\Debug\选择排序法.exe.config
-D:\360\C#\选择排序法\bin\Debug\选择排序法.exe
-D:\360\C#\选择排序法\bin\Debug\选择排序法.pdb
-D:\360\C#\选择排序法\obj\Debug\选择排序法.csprojAssemblyReference.cache
-D:\360\C#\选择排序法\obj\Debug\选择排序法.csproj.CoreCompileInputs.cache
-D:\360\C#\选择排序法\obj\Debug\选择排序法.exe
-D:\360\C#\选择排序法\obj\Debug\选择排序法.pdb

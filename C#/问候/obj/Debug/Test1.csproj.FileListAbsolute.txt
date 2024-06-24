@@ -1,7 +1,0 @@
-C:\Users\吕书颖\source\repos\Test1\bin\Debug\Test1.exe.config
-C:\Users\吕书颖\source\repos\Test1\bin\Debug\Test1.exe
-C:\Users\吕书颖\source\repos\Test1\bin\Debug\Test1.pdb
-C:\Users\吕书颖\source\repos\Test1\obj\Debug\Test1.csprojAssemblyReference.cache
-C:\Users\吕书颖\source\repos\Test1\obj\Debug\Test1.csproj.CoreCompileInputs.cache
-C:\Users\吕书颖\source\repos\Test1\obj\Debug\Test1.exe
-C:\Users\吕书颖\source\repos\Test1\obj\Debug\Test1.pdb

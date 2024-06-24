@@ -1,6 +1,0 @@
-D:\360\C#\简单个人简历\bin\Debug\简单个人简历.exe.config
-D:\360\C#\简单个人简历\bin\Debug\简单个人简历.exe
-D:\360\C#\简单个人简历\bin\Debug\简单个人简历.pdb
-D:\360\C#\简单个人简历\obj\Debug\简单个人简历.csproj.CoreCompileInputs.cache
-D:\360\C#\简单个人简历\obj\Debug\简单个人简历.exe
-D:\360\C#\简单个人简历\obj\Debug\简单个人简历.pdb
